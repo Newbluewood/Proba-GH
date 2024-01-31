@@ -1,0 +1,201 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(170, 153, 129);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+h4{
+    margin: 1rem 0;
+}
+.sadrzajp{
+    margin: 1rem 0;
+    color: grey;
+    font-size: 0.8rem;
+}
+header{
+    margin: 0.5rem;
+    padding: 0.3125rem;
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    border: 1px solid black;
+    flex-grow: 1;
+    order: 1;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    order: 2;
+    background-color: rgb(44, 44, 44);
+    margin: 0.5rem;
+    max-height: fit-content;
+}
+nav>a{
+    display: block;
+    margin: 0.5rem;
+    padding: 0.3125rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    border: 1px solid black;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    flex-grow: 6;
+    order: 3;
+}
+#aside1, #aside2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.3125rem 0;
+    text-align: center;
+    color: rgb(53, 52, 52);
+    ;
+    flex-grow: 2;
+}
+#aside1{
+    order: 1;
+    background-color: rgb(167, 149, 132);
+    border: 1px solid rgb(235, 233, 231);
+}
+#aside2{
+    order: 4;
+    background-color: rgb(133, 116, 101);
+    border: 1px solid rgb(235, 233, 231);
+}
+#box1, #box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.3125rem 0;
+    text-align: center;
+    background-color: rgb(218, 213, 208);
+    border: 1px solid rgb(218, 213, 208);
+    flex-grow: 2;
+}
+#box1{
+    order: 2;
+    color: rgb(135, 138, 145);
+}
+#box2{
+    order: 3;
+    color: rgb(226, 111, 3);
+}
+footer{
+    margin: 0.5rem;
+    padding: 0.3125rem;
+    text-align: center;
+    background-color: rgb(250, 249, 248);
+    color: rgb(53, 52, 52);
+    border: 1px solid rgb(250, 249, 248);
+    flex-grow: 1;
+    order: 4;
+}
+
+@media all and (min-width: 361px) and (max-width:575px) {
+    #aside1{
+        order: 4;
+    }
+    #aside2{
+        order: 1;
+    }
+    #box1{
+        order: 3;
+    }
+    #box2{
+        order: 2;
+    }
+
+
+}
+@media all and (min-width: 576px) and (max-width:960px) {
+    main{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #box1, #box2{
+        flex-grow: 0;
+        min-width: 49%;
+
+    }
+    #box2{
+        margin-right: 0.3125rem;
+    }
+    #aside1, #aside2{
+        flex-grow: 0;
+        min-width: 49%;
+
+    }
+    #aside1{
+        margin-right: 0.3125rem;
+    }
+
+}
+@media all and (min-width: 961px) and (max-width:1200px) {
+    main{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #aside1{
+        flex-grow: 0;
+        min-width: 49%;
+    
+        order: 4;
+    }
+    #aside2{
+        flex-grow: 0;
+        min-width: 49%;
+        margin: 0.3125rem;
+        order: 1;
+    }
+    #box1{
+        flex-grow: 0;
+        min-width: 49%;
+        margin: 0.3125rem;
+        order: 3;
+    }
+    #box2{
+        flex-grow: 0;
+        min-width: 49%;
+        order: 2;
+    }
+
+}
+@media all and (min-width: 1201px) {
+    main{
+        order: 2;
+    }
+    nav{
+        order: 3;
+    }
+    main{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #box1, #box2{
+        flex-grow: 0;
+        min-width: 49%;
+
+    }
+    #box2{
+        margin-right: 0.3125rem;
+    }
+    #aside1, #aside2{
+        flex-grow: 0;
+        min-width: 49%;
+
+    }
+    #aside1{
+        margin-right: 0.3125rem;
+    }
+}
